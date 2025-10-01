@@ -1,0 +1,98 @@
+
+body {
+    background-color: gray;
+    background-image: url(../img/fnaf_bg.jpg);
+    color:white;
+    font-family: �Comic Sans MS�, �Comic Sans�, monospace;
+    font-size: 24;
+}
+
+hr {
+    width: 78%;
+    color: whitesmoke;
+}
+
+.center {
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.par {
+    border: 2px outset red;
+    margin: 4%;
+    padding: 10px;
+}
+
+.fnaf {
+    font-style: italic;
+}
+
+
+#description {
+    background-color: rgba(5, 5, 5, 0.6);
+    color: whitesmoke;
+    padding: 20px;
+    padding-bottom: 46px;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    width: 80%;
+}
+
+
+#table {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    width: 80%;
+}
+
+#table table {
+    border: 2px solid lightgray;
+    border-collapse: collapse;
+    width: 98%;
+}
+
+#table caption {
+    font-size: larger;
+    padding-bottom: 2px;
+}
+
+#table tr {
+    align-items: center;
+}
+
+#table th {
+    text-align: center;
+    border: 2px solid lightgray;
+    padding: 12px;
+    padding-bottom: 8px;
+}
+
+#table td {
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 12px;
+}
+
+
+#back {
+    background-color: rgba(5, 5, 5, 0.6);
+    color: whitesmoke;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    width: 80%;
+}
+
+#back a {
+    color: #809fff;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#back a:hover {
+    color: #ffffff;
+}
