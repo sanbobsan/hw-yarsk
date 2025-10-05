@@ -1,0 +1,39 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+}
+
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+input {
+    font-size: 18pt;
+
+}
+
+form {
+    border: 2px solid #333;
+    border-radius: 24px;
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    width: 98%;
+    resize: none;
+    font-size: 18pt;
+}
+
+input[type="range"] {
+    height: 20px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Что вы думаете об обучении в университете?</h1>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>Личная информация</legend>
+            <table>
+                <tr>
+                    <td width="30%">
+                        <label>ФИО*</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Электронная почта*</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required placeholder="example@email.ru">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Факультет</label>
+                    </td>
+                    <td>
+                        <select id="faculty" name="faculty">
+                            <option value="fbki">ФБКИ</option>
+                            <option value="geo">Географический</option>
+                            <option value="chem">Химический</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Возраст</label>
+                    </td>
+                    <td>
+                        <input type="number" id="age" name="age" min="16" max="100" value="18">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Учебный процесс</legend>
+            <table>
+                <tr>
+                    <td width="30%">
+                        <label>Сложность обучения</label>
+                    </td>
+                    <td>
+                        <input type="range" name="difficulty" min="1" max="10" value="5">
+                        <div class="range-values">
+                            <span>Легко</span>
+                            <span>Средне</span>
+                            <span>Сложно</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Какие предметы вам нравятся?</label>
+                    </td>
+                    <td>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subjects" value="math">
+                            <label for="math">Математика</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subjects" value="programming">
+                            <label for="programming">Программирование</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subjects" value="history">
+                            <label for="history">История</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subjects" value="english">
+                            <label for="foreign_lang">Иностранный язык</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subjects" value="chemistry">
+                            <label for="foreign_lang">Химимя</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="subjects" value="geography">
+                            <label for="foreign_lang">География</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Сколько часов в день вы тратите на учебу?</label>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="radio" name="hours" value="1" id="2hours">
+                            <label for="2hours">0 - 2 часа</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="hours" value="2" id="4hours">
+                            <label for="4hours">2 - 4 часа</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="hours" value="3" id="6hours">
+                            <label for="6hours">4 - 6 часов</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="hours" value="4" id="8hours">
+                            <label for="8hours">6 - 8 часов</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="hours" value="4" id="10hours">
+                            <label for="10hours">8 - 10 часов</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <div>
+            <fieldset>
+                <legend>Идеи и предложения</legend>
+                <textarea rows="8"></textarea>
+            </fieldset>
+        </div>
+
+        <div>
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
