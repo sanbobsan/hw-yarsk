@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+    margin: 24px;
+}
+
+#header {
+    display: table;
+    background: linear-gradient(to right, #6c757d, #495057);
+    border: 2px solid #495057;
+
+    width: 94%;
+    margin: auto;
+    padding: 6px;
+}
+
+#header tab {
+    display: table;
+    background: linear-gradient(to right, #495057, #343a40);
+    border: 2px solid #343a40;
+
+    width: 99%;
+    margin: 0 auto;
+}
+
+#header cell {
+    display: table-cell;
+    background: linear-gradient(to bottom, #e9ecef, #dee2e6);
+    border: 2px solid #adb5bd;
+    border-radius: 10px;
+
+    padding-bottom: 8%;
+}
+
+#main tab {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 4px;
+
+    width: 92%;
+    margin: auto;
+    padding: 4px;
+}
+
+#main cell {
+    display: table-cell;
+    background: linear-gradient(to bottom, #dee2e6, #ced4da);
+    border: 2px solid #adb5bd;
+
+    padding-bottom: 30%;
+}
