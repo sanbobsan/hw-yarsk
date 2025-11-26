@@ -1,0 +1,88 @@
+.paper-btn {
+  display: inline-block;
+  margin: 58px 12px;
+}
+
+.paper-btn label {
+  display: inline-block;
+  width: 80px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #616161;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.paper-btn input:checked ~ label {
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 10px 10px 0 0 #555;
+}
+
+.paper-btn-true input:checked ~ label {
+  background-color: greenyellow;
+}
+
+.paper-btn-false input:checked ~ label {
+  background-color: pink;
+}
+
+.hide {
+  display: none;
+}
+
+.task {
+  margin: 6px;
+  color: #333;
+  font-size: 18pt;
+  border-radius: 9px;
+}
+
+.task label {
+  margin: 0 20px;
+  padding: 10px;
+  text-align: left;
+  display: inline-block;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task .check {
+  display: inline;
+}
+
+.task .check::before {
+  content: "";
+  display: inline-block;
+
+  border: 2px solid #333;
+  border-radius: 4px;
+
+  position: relative;
+  left: 10px;
+  top: 7px;
+
+  min-width: 24px;
+  min-height: 24px;
+
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.task input:checked ~ .check::before {
+  top: 2px;
+  min-width: 24px;
+  min-height: 12px;
+
+  border: 5px solid lawngreen;
+  border-radius: 4px;
+
+  border-right: 0px;
+  border-top: 0px;
+
+  transform: rotate(-45deg);
+}
