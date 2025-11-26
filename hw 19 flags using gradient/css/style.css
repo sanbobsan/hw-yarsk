@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flag {
+  width: 250px;
+  height: 150px;
+  margin: 10px 20px;
+  background-color: white;
+  border: 2px black solid;
+}
+
+.ireland {
+  background: linear-gradient(
+    to right,
+    rgb(0, 155, 72) 33%,
+    white 33%,
+    white 66%,
+    rgb(255, 121, 0) 66%
+  );
+}
+
+.triniada {
+  background: linear-gradient(
+    40deg,
+    rgb(206, 17, 39) 41.5%,
+    white 41.5%,
+    white 43.5%,
+    black 43.5%,
+    black 56.5%,
+    white 56.5%,
+    white 58.5%,
+    rgb(206, 17, 39) 58.5%
+  );
+}
+
+.kongo {
+  background: linear-gradient(
+    -40deg,
+    rgb(0, 149, 67) 41.5%,
+    rgb(252, 222, 74) 41.5%,
+    rgb(252, 222, 74) 58.5%,
+    rgb(219, 36, 30) 58.5%
+  );
+}
+
+.mauritius {
+  background: linear-gradient(
+    rgb(236, 40, 54) 25%,
+    rgb(26, 32, 110) 25%,
+    rgb(26, 32, 110) 50%,
+    rgb(254, 213, 1) 50%,
+    rgb(254, 213, 1) 75%,
+    rgb(0, 166, 81) 75%
+  );
+}
+
+.botswana {
+  background: linear-gradient(
+    rgb(68, 158, 211) 30%,
+    white 30%,
+    white 33%,
+    black 33%,
+    black 67%,
+    white 67%,
+    white 70%,
+    rgb(68, 158, 211) 70%
+  );
+}
+
+.madagascar {
+  background: linear-gradient(90deg, white 33%, transparent 33%),
+    linear-gradient(rgb(252, 62, 50) 50%, rgb(1, 126, 58) 50%);
+}
