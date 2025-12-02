@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS2</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      let a = parseInt(prompt("Введите a"));
+      let b = prompt("Введите b");
+
+      console.log(a % 3);
+      switch (a % 3) {
+        case -1:
+          a++;
+          break;
+        case -2:
+          a += 2;
+          break;
+        case 1:
+          a += 2;
+          break;
+        case 2:
+          a++;
+          break;
+      }
+
+      let sum = 0;
+      let count = 0;
+      for (let i = a; a <= b; a += 3) {
+        sum += a;
+        count++;
+        console.log(a);
+      }
+      let res = sum / count;
+      alert(res);
+      console.log(res);
+    </script>
+  </body>
+</html>

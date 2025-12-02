@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS4</title>
+  </head>
+  <body>
+    <form name="form">
+      <label>Введите строку </label>
+      <input id="inp" type="text" name="field" value="hello-world-edit" />
+      <button type="button" onclick="convert()">Enter</button>
+    </form>
+
+    <script>
+      "use strict";
+
+      function camelize(str) {
+        let words = str.split("-");
+
+        for (let i = 1; i < words.length; i++) {
+          if (words[i].length > 0) {
+            words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+          }
+        }
+
+        return words.join("");
+      }
+
+      function convert() {
+        let text = document.getElementById("inp").value;
+        let res = camelize(text);
+        console.log(res);
+        alert(res);
+      }
+    </script>
+  </body>
+</html>
