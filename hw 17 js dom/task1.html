@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://bki.matecdn.ru/-/010ee52f-25ab-42cd-907c-5851bed6adbf/task1.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <div>Пользователи:</div>
+    <ul class="my-list">
+      <li id="first">Федор</li>
+      <li>Вероника</li>
+    </ul>
+
+    <script>
+      "use strict";
+
+      let list = document.getElementsByTagName("ul")[0];
+      let second = list.getElementsByTagName("li")[1];
+
+      console.log(list);
+      console.log(second);
+    </script>
+
+    <table style="border: solid 2px black; text-align: center">
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      "use strict";
+
+      let table_body = document
+        .getElementsByTagName("table")[0]
+        .getElementsByTagName("tbody")[0];
+
+      let count = 0;
+      for (let row of table_body.getElementsByTagName("tr")) {
+        let cell = row.getElementsByTagName("td")[count++];
+        cell.style.background = "yellow";
+      }
+
+      console.log(table_body);
+    </script>
+  </body>
+</html>
