@@ -12,7 +12,7 @@
   font-size: 18pt;
   text-align: center;
 
-  background-color: #70b80c;
+  background-color: #c4c4c4;
   border-radius: 12px;
 }
 
@@ -23,4 +23,9 @@
 
 .textImage img {
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+hr {
+  width: 92%;
+  border: 1px solid black;
 }
