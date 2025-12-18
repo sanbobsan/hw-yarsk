@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <ul class="tree" id="tree">
+        <li>
+          Машины
+          <ul>
+            <li>
+              Легковые
+              <ul>
+                <li>Corolla</li>
+                <li>Pajero</li>
+              </ul>
+            </li>
+            <li>
+              Грузовые
+              <ul>
+                <li>Камаз</li>
+                <li>Белаз</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Самолеты
+          <ul>
+            <li>Пассажирские</li>
+            <li>Грузовые</li>
+          </ul>
+        </li>
+        <li>
+          Мотоциклы
+          <ul>
+            <li>Стрит</li>
+            <li>Спорт</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      for (let li of tree.querySelectorAll("li")) {
+        let span = document.createElement("span");
+        li.prepend(span);
+        span.append(span.nextSibling);
+      }
+
+      tree.onclick = function (event) {
+        if (event.target.tagName != "SPAN") {
+          return;
+        }
+
+        let childrenContainer = event.target.parentNode.querySelector("ul");
+        if (!childrenContainer) return;
+
+        childrenContainer.hidden = !childrenContainer.hidden;
+      };
+    </script>
+
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <script>
+      const cells = document.querySelectorAll("td");
+
+      cells.forEach((cell) => {
+        cell.addEventListener("click", () => {
+          const randomColor = "#" + Math.random().toString(16).slice(2, 8);
+          cell.style.backgroundColor = randomColor;
+        });
+      });
+    </script>
+  </body>
+</html>
